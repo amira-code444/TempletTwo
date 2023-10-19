@@ -7,7 +7,7 @@
 }
 /* End Variables */
 
-/* End Global Rules */
+/* Start Global Rules */
 *{
     -webkit-box-sizing:border-box ;
     -moz-box-sizing: border-box;
@@ -57,6 +57,59 @@ ul{
 }  
 
 /* End Global Rules */
+
+
+
+
+/* Start Componants */
+.main-heading{
+    text-align: center;
+}
+
+.main-heading h2{
+    font-size: 40px;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 70px;
+
+}
+.main-heading h2::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 120px;
+    background-color: #333;
+}
+
+.main-heading h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -38px;
+    width: 14px;
+    border: 2px solid #333;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.main-heading p{
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* End Componants */
+
+
+
+
 
 /* Start Header */
 
@@ -269,54 +322,6 @@ header nav .toggle-menu{
 
 
 
-/* Start Componants */
-.head-Section{
-    padding: 100px;
-}
-
-.main-heading h2{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 100;
-    position: relative;
-    margin-bottom: 70px;
-
-}
-.main-heading h2::before{
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -30px;
-    transform: translateX(-50%);
-    height: 2px;
-    width: 120px;
-    background-color: #333;
-}
-
-.main-heading h2::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -38px;
-    width: 14px;
-    border: 2px solid #333;
-    height: 14px;
-    border-radius: 50%;
-    background-color: white;
-}
-
-.main-heading p{
-    text-align: center;
-    width: 550px;
-    margin: 0 auto 100px;
-    max-width: 100%;
-    line-height: 1.8;
-    color: var(--text-color);
-}
-
-/* End Componants */
-
 
 /* Start Services */
 .services{
@@ -439,7 +444,13 @@ header nav .toggle-menu{
     position: relative;
     top: 2px;
 }
-
-
-
 /* End Design */
+
+/* Start protfolio */
+
+.protfolio{
+    padding-top: var(--main-Padding);
+    padding-bottom: var(--main-Padding);
+}
+
+/* End protfolio */
